@@ -1,0 +1,314 @@
+
+/*Import Raleway 400, 600 and 700 on line #1 (must be on first line)*/
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  'Raleway', sans-serif;
+  font-size: 20px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  padding-top: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  color: orange;
+  margin-right: 35px;
+  transition: all 1s ease;
+}
+
+li:hover {
+  color: pink;
+  transform: rotate(360deg);
+}
+
+ul {
+  text-align: center;
+  margin-top: 30px;
+  transition: all 1s ease;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+footer nav a {
+  display: block;
+}
+
+.reservation {
+  background-color: grey;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #333;
+  margin-right: 25px;
+  color: pink;
+}
+
+nav {
+	text-align: center;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  transition: all 1s ease;
+  padding: 10px;
+}
+
+.sami {
+    background-color: black;
+    z-index: 300;
+    box-shadow: 10px 10px 30px #000;
+}
+
+header {
+ text-align: center;
+ text-transform: uppercase;
+ background-image: url('../images/home-header.jpg');
+ min-height: 100vh;
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ font-size: 30px;
+ }
+
+ header div {
+   font-size: 50px;
+   font-family:  'Raleway', sans-serif;
+ }
+
+
+
+ .brunch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 75px;
+  padding-right: 15px;
+  margin-bottom: 45px;
+  font-size: 16px;
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .brunch {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+.lunch {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ padding-left: 75px;
+ padding-right: 15px;
+ margin-bottom: 45px;
+ font-size: 16px;
+ grid-gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .lunch {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.dinner {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ padding-left: 75px;
+ padding-right: 15px;
+ margin-bottom: 45px;
+ font-size: 16px;
+ grid-gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .dinner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.location {
+ display: grid;
+ grid-template-columns: 25% 75%;
+ padding-left: 35px;
+ padding-right: 35px;
+ margin-bottom: 25px;
+ font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .location {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+footer {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 25px;
+ padding-left: 25px;
+ padding-right: 25px;
+ background-color: black;
+ text-align: center;
+ color: white;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+section i {
+  color: white;
+  margin-right: 10px;
+}
+
+footer nav {
+  margin-top: 30px;
+  color: white;
+  display: block;
+  position: inherit;
+  text-align: center;
+  background-color: black;
+  padding: 0;
+}
+
+footer nav a {
+  color: white;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-right: 0;
+}
+
+#scroll {
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  #scroll {
+    display: none;
+  }
+}
+
+.photo-scroll i {
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+}
+
+.fa-angle-right {
+  right: 10px;
+  color: white;
+}
+
+.fa-angle-left {
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2000;
+  display: none;
+}
+
+.modal h3 {
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  padding-top: 50px;
+  background-color: white;
+  padding-bottom: 10px;
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.modal form {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  margin-right: 180px;
+  margin-left: 180px;
+}
+
+.modal input {
+  height: 40px;
+  width: 700px;
+  margin-bottom: 10px;
+  border-color: black;
+}
+
+  #time {
+    height: 80px;
+  }
+
+  .modal button {
+    margin-top: 10px;
+  }
+
+  .modal a {
+    position: absolute;
+    top:10px;
+    right: -7px;
+    color: black;
+  }
+
+
+/* ----------------------------------------
+Add comments here for organization!!
+------------------------------------------- */
